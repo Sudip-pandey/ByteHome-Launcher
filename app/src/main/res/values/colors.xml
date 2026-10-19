@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ByteHome cyber-HUD palette: dark, restrained, no neon overload -->
+    <color name="bg">#0A0E14</color>
+    <color name="surface">#111826</color>
+    <color name="grid_line">#141C2A</color>
+    <color name="frame_line">#2A3B52</color>
+    <color name="accent">#35D0E0</color>
+    <color name="accent_dim">#1E6B75</color>
+    <color name="text_primary">#E8EEF4</color>
+    <color name="text_dim">#8A94A6</color>
+</resources>
