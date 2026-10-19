@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grid_background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Branding -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/brand"
+        android:textColor="@color/accent"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.35" />
+
+    <!-- Clock -->
+    <TextView
+        android:id="@+id/clockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="--:--"
+        android:textColor="@color/text_primary"
+        android:textSize="64sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="---"
+        android:textColor="@color/text_dim"
+        android:textSize="15sp"
+        android:letterSpacing="0.15" />
+
+    <!-- Status line -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/batteryText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BAT --%"
+            android:textColor="@color/text_dim"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/wifiText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="WiFi --"
+            android:textColor="@color/text_dim"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/deviceInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text=""
+            android:textColor="@color/text_dim"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Spacer pushes favorites + dock to the bottom -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Favorites -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/favorites_title"
+            android:textColor="@color/text_dim"
+            android:textSize="11sp"
+            android:letterSpacing="0.25" />
+
+        <ImageButton
+            android:id="@+id/addFavoriteButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Add favorite"
+            android:src="@android:drawable/ic_input_add"
+            android:tint="@color/accent" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favoritesList"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="4dp"
+        android:clipToPadding="false" />
+
+    <!-- Dock -->
+    <LinearLayout
+        android:id="@+id/dockBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/dock_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/dockSlot0"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Dock slot 1"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/sym_def_app_icon" />
+
+        <ImageButton
+            android:id="@+id/dockSlot1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Dock slot 2"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/sym_def_app_icon" />
+
+        <ImageButton
+            android:id="@+id/dockSlot2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Dock slot 3"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/sym_def_app_icon" />
+
+        <ImageButton
+            android:id="@+id/dockSlot3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Dock slot 4"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/sym_def_app_icon" />
+
+        <ImageButton
+            android:id="@+id/dockDrawerButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Open app drawer"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_view"
+            android:tint="@color/accent" />
+    </LinearLayout>
+
+    <!-- Bottom actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/drawerButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APPS"
+            android:textColor="@color/accent" />
+
+        <Button
+            android:id="@+id/searchButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:textColor="@color/accent" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SETTINGS"
+            android:textColor="@color/text_dim" />
+    </LinearLayout>
+
+</LinearLayout>
