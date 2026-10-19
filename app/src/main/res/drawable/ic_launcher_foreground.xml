@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ByteHome launcher icon: abstract HUD chip motif. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M32,32 h44 v44 h-44 z"
+        android:strokeColor="#35D0E0"
+        android:strokeWidth="4"
+        android:fillColor="#00000000" />
+    <path
+        android:pathData="M45,45 h18 v18 h-18 z"
+        android:fillColor="#35D0E0" />
+    <path
+        android:pathData="M32,86 h44"
+        android:strokeColor="#8A94A6"
+        android:strokeWidth="3"
+        android:strokeLineCap="round" />
+</vector>
