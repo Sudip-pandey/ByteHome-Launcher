@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ByteHome</string>
+    <string name="brand">BYTEHOME</string>
+    <string name="search_hint">Search apps</string>
+    <string name="drawer_title">APPS</string>
+    <string name="favorites_title">FAVORITES</string>
+    <string name="no_apps_found">No apps found</string>
+    <string name="settings_title">LAUNCHER SETTINGS</string>
+    <string name="choose_launcher">Choose Default Launcher</string>
+    <string name="choose_launcher_desc">Pick which launcher Android uses for the Home button.</string>
+    <string name="reset_dock">Reset dock &amp; favorites</string>
+    <string name="version_label">ByteHome v1.0</string>
+    <string name="could_not_open">Couldn\'t open app</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="favorites_full">Favorites full (8 max)</string>
+    <string name="dock_reset_done">Dock and favorites reset</string>
+    <string name="open_system_settings_hint">Open Settings \u2192 Apps \u2192 Default apps \u2192 Home app</string>
+</resources>
